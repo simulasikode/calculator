@@ -11,9 +11,15 @@ const printSizes = [
   }, // IDR
   {
     label:
-      "Paper size 11.7 x 16.5 inches (A3+)  — Print area 9.8 × 13.9 inches (B4)",
+      "Paper size 11.7 × 16.5 inches (A3)  — Print area 9.8 × 13.9 inches (B4)",
+    value: 26000,
+  }, // IDR
+  {
+    label:
+      "Paper size 13 × 19 inches (A3+)  — Print area 11.7 × 16.5 inches (A3)",
     value: 34500,
   }, // IDR
+
   {
     label:
       "Paper size 16.5 x 23.4 inches (A2) — Print area 9.7 × 27.8 inches (B2)",
@@ -21,7 +27,7 @@ const printSizes = [
   }, // IDR
 ];
 
-const baseCostPerCapital = 576356; // IDR - Adjust this based on your base cost per sheet
+const baseCostPerCapital = 651000; // IDR - Adjust this based on your base cost per sheet
 const additionalCostPerColor = 10500; // IDR - Adjust this based on your cost per color
 
 export default function Home() {
@@ -44,7 +50,7 @@ export default function Home() {
     // You might have other fees, discounts, or calculations to consider
 
     // Example: Apply a 10% discount for quantities over 100 (excluding print size cost)
-    const discountThreshold = 25;
+    const discountThreshold = 50;
     const discountPercentage = costPerSheetValue > discountThreshold ? 0.1 : 0;
 
     const discount = subtotal * discountPercentage;

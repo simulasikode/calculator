@@ -1,6 +1,23 @@
 .main {
-  position: relative;
-  margin: aauto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  flex-wrap: nowrap;
+  margin: auto;
   height: 100vh;
   width: 100vw;
+  padding: 20px;
+}
+.footer {
+  padding: 8px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 16px;
+  width: 540px;
+  height: 64px;
+  font-size: 14px;
+  color: #adadad;
 }

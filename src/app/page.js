@@ -1,13 +1,15 @@
 "use client";
 import Calculator from "../components/Calculator";
 import styles from "./page.module.scss";
-import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Calculator />
-      <Footer />
+      <footer className={styles.footer}>
+        <p>©2023. Simulasi Studio</p>
+        <p>Version 0.1.0</p>
+      </footer>
     </main>
   );
 }
